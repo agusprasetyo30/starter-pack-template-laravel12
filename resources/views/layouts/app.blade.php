@@ -26,13 +26,13 @@
 
 <body>
     <div id="app">
-        <div class="main-wrapper">
-        <div class="navbar-bg"></div>
+        <div class="main-wrapper-1">
+        <div class="navbar-bg" style="height: 70px; background-color: #d4574e;"></div>
         <nav class="navbar navbar-expand-lg main-navbar">
             @include('layouts._navbar')
         </nav>
 
-		<div class="main-sidebar sidebar-style-2" tabindex="1" style="overflow: hidden; outline: none;">
+		<div class="main-sidebar sidebar-style-2" style="overflow: hidden; outline: none;">
             @include('layouts._sidebar')
         </div>
 

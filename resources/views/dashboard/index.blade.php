@@ -1,7 +1,10 @@
 @extends('layouts.app', ['title' => 'coba saja'])
 
-@section('page-title', 'Ini Dashboard Title')
+{{-- @section('page-title', 'Ini Dashboard Title') --}}
 
 @section('content')
-    <h2>Ini Dashboard</h2>
+    <div class="text-dark d-flex flex-column justify-content-center align-items-center" style="height: 70vh;">
+        <h1>Selamat Datang di</h1>
+        <h1>Integrasi Borwita - Reckitt</h1>
+    </div>
 @endsection
