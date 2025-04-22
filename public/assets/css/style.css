@@ -247,7 +247,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .form-group {
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
 }
 .form-group .control-label,
 .form-group > label {
@@ -1326,11 +1326,11 @@ table tr:hover .table-links {
 
 .badge {
   vertical-align: middle;
-  padding: 7px 12px;
+  padding: 5px 10px;
   font-weight: 600;
   letter-spacing: 0.3px;
   border-radius: 30px;
-  font-size: 12px;
+  font-size: 11px;
 }
 .badge.badge-warning {
   color: #fff;

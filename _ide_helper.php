@@ -22681,6 +22681,131 @@ namespace Illuminate\Http {
             }
     }
 
+namespace Illuminate\Routing {
+    /**
+     * 
+     *
+     */
+    class ResponseFactory {
+        /**
+         * 
+         *
+         * @see \App\Providers\AppServiceProvider::boot()
+         * @param mixed $data
+         * @param mixed $message
+         * @return \Illuminate\Http\JsonResponse 
+         * @static 
+         */
+        public static function ok($data = [], $message = 'OK')
+        {
+            return \Illuminate\Routing\ResponseFactory::ok($data, $message);
+        }
+
+        /**
+         * 
+         *
+         * @see \App\Providers\AppServiceProvider::boot()
+         * @param mixed $data
+         * @param mixed $message
+         * @param mixed $showRequest
+         * @param mixed $showResponseCode
+         * @return \Illuminate\Http\JsonResponse 
+         * @static 
+         */
+        public static function created($data = [], $message = 'Created', $showRequest = false, $showResponseCode = false)
+        {
+            return \Illuminate\Routing\ResponseFactory::created($data, $message, $showRequest, $showResponseCode);
+        }
+
+        /**
+         * 
+         *
+         * @see \App\Providers\AppServiceProvider::boot()
+         * @param mixed $data
+         * @param mixed $message
+         * @return \Illuminate\Http\JsonResponse 
+         * @static 
+         */
+        public static function unauthorized($data = [], $message = 'Unauthorized')
+        {
+            return \Illuminate\Routing\ResponseFactory::unauthorized($data, $message);
+        }
+
+        /**
+         * 
+         *
+         * @see \App\Providers\AppServiceProvider::boot()
+         * @param mixed $data
+         * @param mixed $message
+         * @return \Illuminate\Http\JsonResponse 
+         * @static 
+         */
+        public static function forbidden($data = [], $message = 'Forbidden')
+        {
+            return \Illuminate\Routing\ResponseFactory::forbidden($data, $message);
+        }
+
+        /**
+         * 
+         *
+         * @see \App\Providers\AppServiceProvider::boot()
+         * @param mixed $data
+         * @param mixed $message
+         * @return \Illuminate\Http\JsonResponse 
+         * @static 
+         */
+        public static function notFound($data = [], $message = 'Not Found')
+        {
+            return \Illuminate\Routing\ResponseFactory::notFound($data, $message);
+        }
+
+        /**
+         * 
+         *
+         * @see \App\Providers\AppServiceProvider::boot()
+         * @param mixed $data
+         * @param mixed $message
+         * @return \Illuminate\Http\JsonResponse 
+         * @static 
+         */
+        public static function conflict($data = [], $message = 'Conflict')
+        {
+            return \Illuminate\Routing\ResponseFactory::conflict($data, $message);
+        }
+
+        /**
+         * 
+         *
+         * @see \App\Providers\AppServiceProvider::boot()
+         * @param mixed $data
+         * @param mixed $message
+         * @param mixed $responseCode
+         * @return \Illuminate\Http\JsonResponse 
+         * @static 
+         */
+        public static function unproccessableContent($data = [], $message = 'Unprocessable Content', $responseCode = 422)
+        {
+            return \Illuminate\Routing\ResponseFactory::unproccessableContent($data, $message, $responseCode);
+        }
+
+        /**
+         * 
+         *
+         * @see \App\Providers\AppServiceProvider::boot()
+         * @param mixed $data
+         * @param mixed $message
+         * @param mixed $responseCode
+         * @return \Illuminate\Http\JsonResponse 
+         * @static 
+         */
+        public static function internalServerError($data, $message = 'Internal Server Error', $responseCode = 500)
+        {
+            return \Illuminate\Routing\ResponseFactory::internalServerError($data, $message, $responseCode);
+        }
+
+            }
+    }
+
 
 namespace  {
     class App extends \Illuminate\Support\Facades\App {}
